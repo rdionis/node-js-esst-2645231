@@ -12,13 +12,13 @@ const pizzaOffers = [
 ];
 
 const server = http.createServer(function (request, response) {
-  response.write("Willkommen auf unserer Pizzeria-Seite \n\n");
+  response.write("Willkommen auf unserer Pizzeria-Seite! \n\n");
 
   response.write("Aktuelle Angebote: \n-----\n");
 
-  pizzaOffers.forEach((pizza) => {
-    response.write(`${pizza.name}, ${pizza.costs} EUR \n`);
-  });
+  pizzaOffers.forEach(pizza => {
+    response.write(`${pizza.name}, ${pizza.costs} EUR`)
+  })
 
   response.end();
 });
