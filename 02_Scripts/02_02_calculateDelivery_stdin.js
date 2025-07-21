@@ -14,4 +14,4 @@ process.stdin.on("data", (data) => {
       console.log("Lieferkosten", deliveryCosts, "EUR");
     }
   }
-});
+})
