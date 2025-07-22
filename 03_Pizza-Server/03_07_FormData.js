@@ -25,6 +25,7 @@ const server = http.createServer(function (request, response) {
     });
 
     request.on("end", function () {
+      // console.log(querystring.decode(formData))
       const bestellung = querystring.decode(formData);
       response.write("<h1>Bestellseite</h1>");
       response.write(`Danke für die Bestellung (${bestellung.bestellung})`);
