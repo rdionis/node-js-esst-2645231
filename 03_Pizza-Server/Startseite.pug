@@ -10,7 +10,7 @@ html(lang='de')
             a(href='/gibtsnicht') Fehlerseite 
         div 
             each pizza in pizzaOffers
-                div= pizza.name + ', ' + pizza.costs + ' EUR'
+                div= `${pizza.name} ${pizza.costs} EUR`
         form(action='/bestellung' method='post' style='margin-top: 20px; padding: 1em; border: 1px solid black')
             input(placeholder='Bestellung...' type='text' name='bestellung')
             input(placeholder='Adresse...' type='text' name='adresse')
