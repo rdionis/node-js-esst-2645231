@@ -2,7 +2,7 @@ import http from "node:http";
 
 const pizzaOffers = [
   {
-    name: "Ananas Dave",
+    name: "Pinneaple Dave",
     costs: 12,
   },
   {
